@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on Malware Kindergarten</title>
+    <link>https://JustThinkingHard.github.io/tags/c/</link>
+    <description>Recent content in C on Malware Kindergarten</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
+    <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
+    <copyright>© 2026 JustThinkingHard</copyright>
+    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ring 0 Operations: Building a Linux Rootkit from Scratch</title>
+      <link>https://JustThinkingHard.github.io/posts/rootkit/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/rootkit/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Dive: Process Injection via Code Cave Discovery on Linux</title>
+      <link>https://JustThinkingHard.github.io/posts/process_injector/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/process_injector/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Dive: Writing an ELF Code Cave Infector in C</title>
+      <link>https://JustThinkingHard.github.io/posts/elf-infektor/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/elf-infektor/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

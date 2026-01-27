@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Blowfish</title>
+    <title>Authors on Malware Kindergarten</title>
     <link>https://JustThinkingHard.github.io/authors/</link>
-    <description>Recent content in Authors on Blowfish</description>
+    <description>Recent content in Authors on Malware Kindergarten</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>oscardeschamps6@gmail.com (Oscar Deschamps)</managingEditor>
-    <webMaster>oscardeschamps6@gmail.com (Oscar Deschamps)</webMaster>
-    <copyright>© 2026 Oscar Deschamps</copyright>
+    <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
+    <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
+    <copyright>© 2026 JustThinkingHard</copyright>
     <atom:link href="https://JustThinkingHard.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
