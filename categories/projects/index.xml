@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019</title>
+      <link>https://JustThinkingHard.github.io/posts/hid-attack/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/hid-attack/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Deep Dive: Process Injection via Code Cave Discovery on Linux</title>
       <link>https://JustThinkingHard.github.io/posts/process_injector/</link>
       <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>

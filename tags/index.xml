@@ -62,11 +62,21 @@
     </item>
     
     <item>
-      <title>ELF</title>
-      <link>https://JustThinkingHard.github.io/tags/elf/</link>
-      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Attack</title>
+      <link>https://JustThinkingHard.github.io/tags/attack/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>https://JustThinkingHard.github.io/tags/elf/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/attack/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CVE</title>
+      <link>https://JustThinkingHard.github.io/tags/cve/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/cve/</guid>
       <description></description>
       
     </item>
@@ -74,9 +84,19 @@
     <item>
       <title>Linux</title>
       <link>https://JustThinkingHard.github.io/tags/linux/</link>
-      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
       <guid>https://JustThinkingHard.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ELF</title>
+      <link>https://JustThinkingHard.github.io/tags/elf/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/elf/</guid>
       <description></description>
       
     </item>

