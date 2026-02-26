@@ -9,7 +9,67 @@
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bootloader</title>
+      <link>https://JustThinkingHard.github.io/tags/bootloader/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/bootloader/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>FCSC</title>
+      <link>https://JustThinkingHard.github.io/tags/fcsc/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/fcsc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://JustThinkingHard.github.io/tags/hardware/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/hardware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Low Level</title>
+      <link>https://JustThinkingHard.github.io/tags/low-level/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/low-level/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Reverse Engineering</title>
+      <link>https://JustThinkingHard.github.io/tags/reverse-engineering/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/reverse-engineering/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>UEFI</title>
+      <link>https://JustThinkingHard.github.io/tags/uefi/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/uefi/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>C</title>
@@ -27,16 +87,6 @@
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
       <guid>https://JustThinkingHard.github.io/tags/linux-kernel/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Low Level</title>
-      <link>https://JustThinkingHard.github.io/tags/low-level/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>https://JustThinkingHard.github.io/tags/low-level/</guid>
       <description></description>
       
     </item>

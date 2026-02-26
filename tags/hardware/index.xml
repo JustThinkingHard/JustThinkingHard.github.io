@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Malware Kindergarten</title>
+    <link>https://JustThinkingHard.github.io/tags/hardware/</link>
+    <description>Recent content in Hardware on Malware Kindergarten</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
+    <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
+    <copyright>© 2026 JustThinkingHard</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Write-up: FCSC | Sésame, ouvre-toi (harder)</title>
+      <link>https://JustThinkingHard.github.io/posts/fcsc-s%C3%A9same-ouvre-toi-harder/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/fcsc-s%C3%A9same-ouvre-toi-harder/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

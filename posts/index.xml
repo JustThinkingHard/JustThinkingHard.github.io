@@ -9,7 +9,17 @@
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Write-up: FCSC | Sésame, ouvre-toi (harder)</title>
+      <link>https://JustThinkingHard.github.io/posts/fcsc-s%C3%A9same-ouvre-toi-harder/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/fcsc-s%C3%A9same-ouvre-toi-harder/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Ring 0 Operations: Building a Linux Rootkit from Scratch</title>

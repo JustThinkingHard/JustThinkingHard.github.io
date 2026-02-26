@@ -4,19 +4,25 @@
 
   <url>
     <loc>https://JustThinkingHard.github.io/</loc>
-    <lastmod>2026-01-27T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://JustThinkingHard.github.io/posts/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://JustThinkingHard.github.io/posts/fcsc-s%C3%A9same-ouvre-toi-harder/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://JustThinkingHard.github.io/cv/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://JustThinkingHard.github.io/posts/</loc>
-    <lastmod>2026-01-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
