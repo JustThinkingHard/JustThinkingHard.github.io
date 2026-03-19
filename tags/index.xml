@@ -9,7 +9,67 @@
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ARM64</title>
+      <link>https://JustThinkingHard.github.io/tags/arm64/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/arm64/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>DMA Attack</title>
+      <link>https://JustThinkingHard.github.io/tags/dma-attack/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/dma-attack/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://JustThinkingHard.github.io/tags/hardware/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/hardware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>QEMU</title>
+      <link>https://JustThinkingHard.github.io/tags/qemu/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/qemu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Secure Boot</title>
+      <link>https://JustThinkingHard.github.io/tags/secure-boot/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/secure-boot/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>U-Boot</title>
+      <link>https://JustThinkingHard.github.io/tags/u-boot/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/u-boot/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Bootloader</title>
@@ -27,16 +87,6 @@
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
       <guid>https://JustThinkingHard.github.io/tags/fcsc/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://JustThinkingHard.github.io/tags/hardware/</link>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>https://JustThinkingHard.github.io/tags/hardware/</guid>
       <description></description>
       
     </item>

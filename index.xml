@@ -9,7 +9,17 @@
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)</title>
+      <link>https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Write-up: FCSC | Sésame, ouvre-toi (harder)</title>
