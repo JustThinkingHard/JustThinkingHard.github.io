@@ -227,7 +227,7 @@
     "keywords": ["Hardware","U-Boot","Secure Boot","DMA Attack","QEMU","ARM64"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "958"
+    "wordCount": "959"
   }]
   </script>
 
@@ -787,7 +787,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-03-19T00:00:00&#43;00:00">19 March 2026</time><span class="px-2 text-primary-500">&middot;</span><span>958 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2026-03-19T00:00:00&#43;00:00">19 March 2026</time><span class="px-2 text-primary-500">&middot;</span><span>959 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -1012,7 +1012,7 @@
 <p>First, build the payload with <code>make pwned</code>, then launch the attack sequence with <code>./setup_lab.sh attack</code>.</p>
 <p>In another terminal, pull out your virtual PCIe card:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gdb-multiarch</span></span></code></pre></div></div>
-<p>Connect to the QEMU debug server, and place a hardware breakpoint exactly where the kernel is decompressed in RAM (<code>0x40200000</code>):</p>
+<p>Connect to the QEMU debug server, and place a hardware breakpoint exactly where the kernel will be executed in RAM (<code>0x40200000</code>):</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(gdb) target remote localhost:1234
 </span></span><span class="line"><span class="cl">(gdb) hb *0x40200000
 </span></span><span class="line"><span class="cl">(gdb) c</span></span></code></pre></div></div>
