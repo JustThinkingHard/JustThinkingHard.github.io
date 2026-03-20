@@ -9,7 +9,27 @@
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Mar 2026 10:50:00 +0100</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Me</title>
+      <link>https://JustThinkingHard.github.io/aboutme/</link>
+      <pubDate>Fri, 20 Mar 2026 10:50:00 +0100</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/aboutme/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>To do list</title>
+      <link>https://JustThinkingHard.github.io/todo-list/</link>
+      <pubDate>Fri, 20 Mar 2026 10:50:00 +0100</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/todo-list/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)</title>
