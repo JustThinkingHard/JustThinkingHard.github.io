@@ -9,7 +9,17 @@
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deep Dive: Writing an eBPF-based Anti-Ransomware in C</title>
+      <link>https://JustThinkingHard.github.io/posts/anti-ransomware/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/anti-ransomware/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Ring 0 Operations: Building a Linux Rootkit from Scratch</title>

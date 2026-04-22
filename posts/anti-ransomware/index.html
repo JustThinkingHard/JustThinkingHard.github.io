@@ -15,20 +15,20 @@
 
   
   
-    <title>Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab) &middot; Malware Kindergarten</title>
-    <meta name="title" content="Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab) &middot; Malware Kindergarten">
+    <title>Deep Dive: Writing an eBPF-based Anti-Ransomware in C &middot; Malware Kindergarten</title>
+    <meta name="title" content="Deep Dive: Writing an eBPF-based Anti-Ransomware in C &middot; Malware Kindergarten">
   
 
   
   
-    <meta name="description" content="A practical demonstration of a DMA attack to bypass U-Boot&#39;s Secure Boot on an ARM64 architecture using a QEMU lab environment.">
+    <meta name="description" content="How to use eBPF to create a powerful anti-ransomware tool that monitors file operations and blocks suspicious activity in real-time.">
   
   
-    <meta name="keywords" content="Hardware,U-Boot,Secure Boot,DMA Attack,QEMU,ARM64,">
+    <meta name="keywords" content="C,EDR,eBPF,Kernel,Linux,Ransomware,">
   
   
   
-  <link rel="canonical" href="https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/">
+  <link rel="canonical" href="https://JustThinkingHard.github.io/posts/anti-ransomware/">
   
 
   
@@ -38,26 +38,26 @@
   
 
   
-  <meta property="og:url" content="https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/">
+  <meta property="og:url" content="https://JustThinkingHard.github.io/posts/anti-ransomware/">
   <meta property="og:site_name" content="Malware Kindergarten">
-  <meta property="og:title" content="Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)">
-  <meta property="og:description" content="A practical demonstration of a DMA attack to bypass U-Boot&#39;s Secure Boot on an ARM64 architecture using a QEMU lab environment.">
+  <meta property="og:title" content="Deep Dive: Writing an eBPF-based Anti-Ransomware in C">
+  <meta property="og:description" content="How to use eBPF to create a powerful anti-ransomware tool that monitors file operations and blocks suspicious activity in real-time.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-03-19T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-03-19T00:00:00+00:00">
-    <meta property="article:tag" content="Hardware">
-    <meta property="article:tag" content="U-Boot">
-    <meta property="article:tag" content="Secure Boot">
-    <meta property="article:tag" content="DMA Attack">
-    <meta property="article:tag" content="QEMU">
-    <meta property="article:tag" content="ARM64">
+    <meta property="article:published_time" content="2026-04-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-22T00:00:00+00:00">
+    <meta property="article:tag" content="C">
+    <meta property="article:tag" content="EDR">
+    <meta property="article:tag" content="EBPF">
+    <meta property="article:tag" content="Kernel">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Ransomware">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)">
-  <meta name="twitter:description" content="A practical demonstration of a DMA attack to bypass U-Boot&#39;s Secure Boot on an ARM64 architecture using a QEMU lab environment.">
+  <meta name="twitter:title" content="Deep Dive: Writing an eBPF-based Anti-Ransomware in C">
+  <meta name="twitter:description" content="How to use eBPF to create a powerful anti-ransomware tool that monitors file operations and blocks suspicious activity in real-time.">
 
   
   
@@ -209,25 +209,25 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)",
-    "headline": "Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)",
-    "description": "A practical demonstration of a DMA attack to bypass U-Boot\u0027s Secure Boot on an ARM64 architecture using a QEMU lab environment.",
+    "name": "Deep Dive: Writing an eBPF-based Anti-Ransomware in C",
+    "headline": "Deep Dive: Writing an eBPF-based Anti-Ransomware in C",
+    "description": "How to use eBPF to create a powerful anti-ransomware tool that monitors file operations and blocks suspicious activity in real-time.",
     "inLanguage": "en",
-    "url" : "https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/",
+    "url" : "https://JustThinkingHard.github.io/posts/anti-ransomware/",
     "author" : {
       "@type": "Person",
       "name": "JustThinkingHard"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-03-19T00:00:00\u002b00:00",
-    "datePublished": "2026-03-19T00:00:00\u002b00:00",
+    "dateCreated": "2026-04-22T00:00:00\u002b00:00",
+    "datePublished": "2026-04-22T00:00:00\u002b00:00",
     
-    "dateModified": "2026-03-19T00:00:00\u002b00:00",
+    "dateModified": "2026-04-22T00:00:00\u002b00:00",
     
-    "keywords": ["Hardware","U-Boot","Secure Boot","DMA Attack","QEMU","ARM64"],
+    "keywords": ["C","EDR","eBPF","Kernel","Linux","Ransomware"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "959"
+    "wordCount": "2577"
   }]
   </script>
 
@@ -735,7 +735,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)
+        Deep Dive: Writing an eBPF-based Anti-Ransomware in C
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -787,7 +787,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-03-19T00:00:00&#43;00:00">19 March 2026</time><span class="px-2 text-primary-500">&middot;</span><span>959 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2026-04-22T00:00:00&#43;00:00">22 April 2026</time><span class="px-2 text-primary-500">&middot;</span><span>2577 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">13 mins</span>
     
 
     
@@ -891,17 +891,17 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#lab-setup">Lab Setup</a></li>
-    <li><a href="#theory-how-do-the-pros-do-it">Theory: How Do the &ldquo;Pros&rdquo; Do It?</a></li>
-    <li><a href="#attack-level-1-overwriting-the-kernel-pwned">Attack Level 1: Overwriting the Kernel (Pwned)</a></li>
-    <li><a href="#attack-level-2-open-sesame-root-shell">Attack Level 2: Open Sesame (Root Shell)</a>
+    <li><a href="#what-is-ebpf">What is <em>eBPF</em>?</a></li>
+    <li><a href="#the-logic-behind-the-anti-ransomware">The logic behind the anti-ransomware</a></li>
+    <li><a href="#the-ebpf-program">The <em>eBPF</em> program</a></li>
+    <li><a href="#the-daemon">The daemon</a>
       <ul>
-        <li><a href="#1-hunting-in-memory">1. Hunting in Memory</a></li>
-        <li><a href="#2-cannibalizing-the-ram">2. Cannibalizing the RAM</a></li>
-        <li><a href="#3-the-final-injection">3. The Final Injection</a></li>
+        <li><a href="#load-the-ebpf">Load the <em>eBPF</em></a></li>
+        <li><a href="#calculate-the-entropy">Calculate the entropy</a></li>
+        <li><a href="#update-hashmaps">Update hashmaps</a></li>
       </ul>
     </li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#testing-with-a-ransomware-">Testing with a ransomware !</a></li>
   </ul>
 </nav>
   </div>
@@ -915,17 +915,17 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#lab-setup">Lab Setup</a></li>
-    <li><a href="#theory-how-do-the-pros-do-it">Theory: How Do the &ldquo;Pros&rdquo; Do It?</a></li>
-    <li><a href="#attack-level-1-overwriting-the-kernel-pwned">Attack Level 1: Overwriting the Kernel (Pwned)</a></li>
-    <li><a href="#attack-level-2-open-sesame-root-shell">Attack Level 2: Open Sesame (Root Shell)</a>
+    <li><a href="#what-is-ebpf">What is <em>eBPF</em>?</a></li>
+    <li><a href="#the-logic-behind-the-anti-ransomware">The logic behind the anti-ransomware</a></li>
+    <li><a href="#the-ebpf-program">The <em>eBPF</em> program</a></li>
+    <li><a href="#the-daemon">The daemon</a>
       <ul>
-        <li><a href="#1-hunting-in-memory">1. Hunting in Memory</a></li>
-        <li><a href="#2-cannibalizing-the-ram">2. Cannibalizing the RAM</a></li>
-        <li><a href="#3-the-final-injection">3. The Final Injection</a></li>
+        <li><a href="#load-the-ebpf">Load the <em>eBPF</em></a></li>
+        <li><a href="#calculate-the-entropy">Calculate the entropy</a></li>
+        <li><a href="#update-hashmaps">Update hashmaps</a></li>
       </ul>
     </li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#testing-with-a-ransomware-">Testing with a ransomware !</a></li>
   </ul>
 </nav>
   </div>
@@ -942,158 +942,216 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          
-<h1 class="relative group">Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)
-    <div id="bypassing-u-boot-secure-boot-via-dma-attack-qemu-lab" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#bypassing-u-boot-secure-boot-via-dma-attack-qemu-lab" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-<p>Today, we are diving into a formidable hardware attack: bypassing Secure Boot using a DMA (Direct Memory Access) attack.</p>
-<p>The scenario is a classic in hardware security challenges. We have an ARM64 architecture where U-Boot is configured with Secure Boot enabled. It loads a Linux kernel encapsulated in a FIT Image, verifies its cryptographic signature (RSA 4096), and if it&rsquo;s legitimate, boots it. The chain of trust is cryptographically flawless.</p>
-<p>But what happens if we attack the RAM <em>after</em> the verification, but <em>before</em> the execution? This is what we call a <strong>TOCTOU</strong> (<em>Time-Of-Check to Time-Of-Use</em>) vulnerability. In this post, we will set up a complete QEMU lab to simulate this attack and pop a root shell.</p>
+          <p><em><strong>Disclaimer: This tool is a Proof of Concept (PoC).</strong></em></p>
+<p>Europe is currently starting to rotate towards Linux and less american software in general, meaning that a lot of new Linux users are going to be exposed to a lot of new threats, <em>ransomware</em> being one of the most common and dangerous ones. I wanted to create a tool that could help protect these new users from <em>ransomware</em> attacks, and I thought that using <em>eBPF</em> would be a great way to do it. Obviously, this is not a complete solution, but it is a good starting point for anyone interested in learning how to use <em>eBPF</em> for security purposes.</p>
 
-<h2 class="relative group">Lab Setup
-    <div id="lab-setup" class="anchor"></div>
+<h2 class="relative group">What is <em>eBPF</em>?
+    <div id="what-is-ebpf" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab-setup" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#what-is-ebpf" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>Before breaking everything, we need to build our target. I scripted the environment to make our lives easier.</p>
-<p><strong>Required dependencies:</strong></p>
+<p><em>eBPF</em> (extended Berkeley Packet Filter) is a powerful technology that allows you to run custom code in the Linux kernel without needing to modify the kernel itself. It provides a safe and efficient way to monitor and manipulate system behavior in real-time. This makes it an ideal tool for creating security solutions like an <em>anti-ransomware</em>. With <em>eBPF</em>, we can hook into various kernel events, such as file operations, and analyze them to detect and block suspicious activity. However it is important to note that <em>eBPF</em> has some limitations, such as a limited instruction set and strict safety checks, which can make it challenging to implement complex logic. Despite these challenges, <em>eBPF</em> offers a powerful and flexible platform for building security tools that can help protect Linux users from <em>ransomware</em> and other threats.</p>
+<p>Knowing that, we can divide the project into two parts: the <em>eBPF</em> program that will run in the kernel and monitor file operations, and the user-space program that will load the <em>eBPF</em> program and handle the logic for blocking suspicious activity, the last part is known as a <em>daemon</em>.</p>
+
+<h2 class="relative group">The logic behind the anti-ransomware
+    <div id="the-logic-behind-the-anti-ransomware" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-logic-behind-the-anti-ransomware" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>The main idea of this project is to not use any kind of signature, meaning we actually need to <strong>flag</strong> a process as malicious to kill it. To do that, we need to find something that characterizes <em>ransomware</em>, and the most obvious one is the fact that <em>ransomware</em> encrypts files. Thus, we need to monitor writing operations on files, and if we detect a process that is writing gibberish data, we can flag it as malicious and kill it. But how can our program know if the data being written is non-sense or not ? Well, there is something called <em>entropy</em> that can be used to measure the randomness of data, and it is commonly used in cryptography to measure the strength of encryption. The idea is that if a process is writing data with high entropy, it is likely that it is encrypting files, and thus we can flag it as malicious.</p>
+<p>So now, our program is able to detect a suspicious process, but we still need to find a way to block it. The funniest way to do that is to simply kill the process, but that comes with a big problem:</p>
+<p>How do we differentiate a malicious process from a legitimate one that is just writing random data (like a compressor for example) ?</p>
+<p>Well, in the real world, this will be a problem, and there is no perfect solution to it, but for the sake of this project, we build a simple <em>whitelist</em> of processes that are allowed to write high entropy data. This <em>whitelist</em> is generated at build-time, taking all binaries from <em>/usr/bin, /usr/sbin, /snap/bin&hellip;</em>, and thus allowing all legitimate processes to write high entropy data without being flagged as malicious. This is not a perfect solution, but it is a good starting point for this project.</p>
+<p>(To upgrade this without it becoming a real EDR solution, we could add a system of reputation for processes, that would add points to a process each time it writes high entropy data, and remove points each amount of time, and if a process reaches a certain threshold of points, it would be flagged as malicious and killed. This way, we could allow some false positives without killing legitimate processes, while still being able to block malicious ones. But this is not a perfect answer either, and it is out of the scope of this project, so I will not implement it for now)</p>
+<p>But what happens if a process is flagged, killed and restarted ?!</p>
+<p>We need to add a <em>blacklist</em> as well, storing all the processes that have been flagged as malicious, and if a process is in the <em>blacklist</em>, it will be killed immediately without being allowed to write any data. This way, even if a process is restarted, it will still be blocked from writing data.</p>
+<p>Ok ! We got most of the idea, now, it is time to go to war !</p>
+
+<h2 class="relative group">The <em>eBPF</em> program
+    <div id="the-ebpf-program" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-ebpf-program" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>First of all, we need to gather every binary and library we need, and i will not explain how to get them since I made it automatic if you build the project.</p>
+<p>How do we make the <em>eBPF</em> talk to the daemon ? As i was saying before, <em>eBPF</em> has a limit of ressource and on top of that, this is still a program that is not allowed to sleep. Without a daemon user-space, we would need to do all the entropy checks, <em>blacklist</em> and <em>whitelist</em> check in an incredible narrow window to make sure that we don&rsquo;t slow the system. We can see that this is really hard, and fortunatly, we don&rsquo;t have to. <em>eBPF</em> has a system of shared memory, allowing us to communicate with a process in user-space (our <em>daemon</em>).</p>
+<p>What information will we send to the daemon then ? We need to send the process id (<em>PID</em>), the thread group id (<em>TGID</em>), the file descriptor (<em>FD</em>), the current name of the command (<em>comm</em>), the size of the data being written and the program inode. With this information, the daemon will be able to do all the checks and decide if the process is malicious or not. Of course, we can not send all the data being written to the daemon, since it can be really big, but we can read a chunk of 512 bytes (the size of a memory page) and send it to the daemon to calculate the entropy. This way, we can have a good estimation of the entropy without sending too much data to the daemon. We will take the middle of the data being written to make sure we are not sending only the header of the file, which can be really similar for different files and thus not giving us a good estimation of the entropy.</p>
+<p>Now, we hook the syscall <code>sys_enter_write</code> ! This syscall is called each time a process is writing data to a file, and it is the perfect place to hook to monitor file operations.</p>
+<p>However, if we leave it like that, we just monitor write operations, but it means that <strong>every</strong> write operation will be monitored, even the ones that are done by a <em>whitelist</em>ed process, and thus we will be doing a lot of useless work. To avoid that, we need to do the check inside the ePBF program and only send the information to the daemon if the process is not <em>whitelist</em>ed. This way, we can avoid doing a lot of useless work and only monitor the processes that are not <em>whitelist</em>ed.</p>
+<p>To do that, we can declare a map in <em>eBPF</em> that will store the <em>whitelist</em>, and we can check if the process is in the <em>whitelist</em> before sending the information to the daemon. This way, we can avoid doing a lot of useless work and only monitor the processes that are not <em>whitelist</em>ed.</p>
+<p>We will also need to declare a map for the <em>blacklist</em>, to store the processes that have been flagged as malicious, and if a process is in the <em>blacklist</em>, we will kill it immediately without sending any information to the daemon.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define MAX_ENTRIES 10240
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__uint</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">BPF_MAP_TYPE_HASH</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__uint</span><span class="p">(</span><span class="n">max_entries</span><span class="p">,</span> <span class="n">MAX_ENTRIES</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__type</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">__u64</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__type</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">__u8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="o">*</span><span class="n">whitelist</span><span class="o">*</span> <span class="nf">SEC</span><span class="p">(</span><span class="s">&#34;.maps&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__uint</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">BPF_MAP_TYPE_HASH</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__uint</span><span class="p">(</span><span class="n">max_entries</span><span class="p">,</span> <span class="n">MAX_ENTRIES</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__type</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">__u64</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__type</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">__u8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="o">*</span><span class="n">blacklist</span><span class="o">*</span> <span class="nf">SEC</span><span class="p">(</span><span class="s">&#34;.maps&#34;</span><span class="p">);</span></span></span></code></pre></div></div>
+<p>As seen in the code snippet above, we declare two maps, one for the <em>whitelist</em> and one for the <em>blacklist</em>, both of type <code>BPF_MAP_TYPE_HASH</code>, with a maximum of 10240 entries, and with a key of type <code>__u64</code> (the <em>inode</em>) and a value of type <code>__u8</code> (useless data).</p>
+<p><ins>Why a hashmap with the inode as a key ?</ins> Because the inode is a unique identifier for a file in the filesystem, and it is not possible for two different files to have the same inode. This way, we can be sure that we are <em>whitelist</em>ing or <em>blacklist</em>ing the correct file, even if there are multiple copies of the same file in the system.</p>
+<p><ins>Why a hashmap with a useless value ?</ins> Because we just need to check if the file is in the <em>whitelist</em> or in the <em>blacklist</em>, we don&rsquo;t need to store any additional information, and thus we can just store a useless value to save space.</p>
+<p>Now, we can just check the inode of the current process is in the <em>whitelist</em> or in the <em>blacklist</em>, and if it is in the <em>whitelist</em>, we do nothing, if it is in the <em>blacklist</em>, we kill the process immediately, and if it is not in either of them, we send the information to the daemon to do the checks and decide if the process is malicious or not.</p>
+<p><strong>Nice, now time for the user-space !</strong></p>
+
+<h2 class="relative group">The daemon
+    <div id="the-daemon" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-daemon" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>This is where all the logic happens, this is where we calculate the entropy, check the <em>whitelist</em> and the <em>blacklist</em>, and decide if a process is malicious or not. This is also where we will add a lot of features in the future, like the reputation system that I was talking about before.</p>
+<p>For now, here is a list of what we need to do in the daemon:</p>
 <ul>
-<li><code>qemu-system-aarch64</code> (v7.0+)</li>
-<li><code>gcc-aarch64-linux-gnu</code> (cross-compiler)</li>
-<li><code>mtools</code> &amp; <code>dosfstools</code> (for forging the FAT SD card)</li>
-<li><code>openssl</code> (for generating the signing keys)</li>
-<li><code>gdb-multiarch</code> (our injection weapon)</li>
+<li>Load the <em>eBPF</em> program and get data from it.</li>
+<li>Calculate the entropy of the data received and react accordingly.</li>
+<li>Update the <em>whitelist</em> hashmap from the file <code>whitelist.txt</code>, and the <em>blacklist</em> hashmap from the file <code>blacklist.txt</code>.</li>
 </ul>
-<p>For the project structure, simply clone U-Boot and Buildroot (to get a minimalist Linux kernel) at the root, then run the setup script:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/u-boot/u-boot.git
-</span></span><span class="line"><span class="cl">git clone https://github.com/buildroot/buildroot.git
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> src
-</span></span><span class="line"><span class="cl">chmod +x setup_lab.sh
-</span></span><span class="line"><span class="cl">./setup_lab.sh setup</span></span></code></pre></div></div>
-<p><em>Technical note: The script generates a dynamic Device Tree (DTB) from QEMU, injects our RSA public key into it, seals the kernel in a FIT Image, and places everything on a virtual SD card.</em></p>
-<p>Once ready, start the machine:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./setup_lab.sh run</span></span></code></pre></div></div>
-<hr>
 
-<h2 class="relative group">Theory: How Do the &ldquo;Pros&rdquo; Do It?
-    <div id="theory-how-do-the-pros-do-it" class="anchor"></div>
+<h3 class="relative group">Load the <em>eBPF</em>
+    <div id="load-the-ebpf" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#theory-how-do-the-pros-do-it" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>In the real world, the attacker doesn&rsquo;t type magic commands on their keyboard. They open the device&rsquo;s case and plug an FPGA card (often flashed with the <strong>PCILeech</strong> project) into a PCIe or Thunderbolt port.</p>
-<p>The goal is to use the DMA channel to read and write to the physical RAM at the speed of light, completely bypassing the central processor. The attacker lets U-Boot calculate the SHA256 hash of the kernel in RAM. The verification passes. But in the microsecond separating this &ldquo;OK&rdquo; from the actual Linux boot, the FPGA bombards the target memory to overwrite the legitimate code with a malicious payload.</p>
-<p>In our virtual lab, we don&rsquo;t have an FPGA. Our DMA attack tool will be <strong>GDB</strong>. It will allow us to pause the motherboard and alter the RAM manually with the precision of a surgeon.</p>
-<hr>
-
-<h2 class="relative group">Attack Level 1: Overwriting the Kernel (Pwned)
-    <div id="attack-level-1-overwriting-the-kernel-pwned" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#attack-level-1-overwriting-the-kernel-pwned" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>We start with a simple proof of concept: replacing the legitimate kernel with a small shellcode (<code>pwned.bin</code>) that prints a message and halts.</p>
-<p>First, build the payload with <code>make pwned</code>, then launch the attack sequence with <code>./setup_lab.sh attack</code>.</p>
-<p>In another terminal, pull out your virtual PCIe card:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gdb-multiarch</span></span></code></pre></div></div>
-<p>Connect to the QEMU debug server, and place a hardware breakpoint exactly where the kernel will be executed in RAM (<code>0x40200000</code>):</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(gdb) target remote localhost:1234
-</span></span><span class="line"><span class="cl">(gdb) hb *0x40200000
-</span></span><span class="line"><span class="cl">(gdb) c</span></span></code></pre></div></div>
-<p>U-Boot verifies the signature, prints <code>OK</code>, and gets ready to boot. QEMU freezes on the message <code>Starting kernel ...</code>. This is our TOCTOU window. We brutally inject our binary into RAM to overwrite the kernel, then resume execution:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(gdb) restore pwned.bin binary 0x40200000
-</span></span><span class="line"><span class="cl">(gdb) c</span></span></code></pre></div></div>
-<p>Result: U-Boot validated a legitimate Linux kernel, but is now executing our shellcode. Secure Boot bypassed.</p>
-<hr>
-
-<h2 class="relative group">Attack Level 2: Open Sesame (Root Shell)
-    <div id="attack-level-2-open-sesame-root-shell" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#attack-level-2-open-sesame-root-shell" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>Crashing the machine is fun. Getting an interactive passwordless <code>root</code> shell is better.</p>
-<p>This time, we won&rsquo;t overwrite the entire kernel, but rather modify its boot arguments (<code>bootargs</code>) located in the Device Tree in RAM. Our goal: force Linux to run <code>init=/bin/sh</code>.</p>
-
-<h3 class="relative group">1. Hunting in Memory
-    <div id="1-hunting-in-memory" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-hunting-in-memory" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#load-the-ebpf" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<p>In GDB (still frozen at the kernel start), the <code>$x0</code> register holds the address of the Device Tree. We look for the legitimate string passed by U-Boot:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(gdb) find $x0, +0x100000, &#34;root=/dev/vdb&#34;</span></span></code></pre></div></div>
-<p>GDB returns an address. The problem: we can&rsquo;t overwrite <code>root=/dev/vdb</code>, because Linux absolutely needs it to mount the filesystem. We must find a &ldquo;sacrificial&rdquo; zone nearby.</p>
-<p>Let&rsquo;s do a quick RAM autopsy to see the full sentence. We step back a few dozen bytes and display the memory as a string:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(gdb) x/s OUTPUT_OF_FIND_COMMAND - 42 </span></span></code></pre></div></div>
-<p><em>(Feel free to play with the offset to align the string properly).</em>
-Bingo! The memory reveals the exact line:
-<code>console=ttyAMA0 earlycon=pl011,0x09000000 root=/dev/vdb</code></p>
+<p>First of all, we use the command <code>bpftool gen skeleton</code>, it will generate a header file that we will use to load the <em>eBPF</em> program. This header file contains a function that will load the <em>eBPF</em> program and return a pointer to it, and it also contains the definitions of the maps that we declared in the <em>eBPF</em> program, so we can use them in the daemon.</p>
+<p>To gather the data sent by the <em>eBPF</em> program, we will use the ring buffer. It contains a buffer of 512 char. We use <code>ring_buffer__new()</code>, so that when a new buffer is sent through the ring buffer, we catch it and send it to the function <code>entropy_calculus</code>. But how do we wait for a new entry ? We will use <code>epoll</code> which will tell us when the ring buffer has sent new data.</p>
+<p>Now, the daemon will wait for an update from our <em>eBPF</em> program !</p>
 
-<h3 class="relative group">2. Cannibalizing the RAM
-    <div id="2-cannibalizing-the-ram" class="anchor"></div>
+<h3 class="relative group">Calculate the entropy
+    <div id="calculate-the-entropy" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-cannibalizing-the-ram" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#calculate-the-entropy" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<p>In embedded systems, memory allocation is strict. If we lengthen the string, we will overwrite neighboring Device Tree components and trigger a Kernel Panic. We must &ldquo;cannibalize&rdquo; the existing space, down to the exact character count.</p>
-<p>The perfect target is <code>earlycon=pl011,0x09000000</code>. It&rsquo;s useful for early debug logs, but not vital for the boot process.
-We will overwrite this part with our <code>init=/bin/sh</code> payload.</p>
-<p>Precision calculation:
-The offset between the beginning of the string and the word <code>earlycon</code> is 16 bytes. We will fill the remaining gap with spaces so we don&rsquo;t shift the <code>root=/dev/vdb</code> that comes right after. The payload will be exactly the same size (25 characters): <code>&quot;init=/bin/sh             &quot;</code>.</p>
+<p>To flag a malicious process, we need to give our <em>anti-ransomware</em> a way to detect them ! To do that, we will use the power of mathematics. Thanks to Mr Shannon, we have an equation to calculate the entropy of a list of numbers. With the hexadecimal char we give to the function, it should return a float number between 0 and 8. The closest it is to 8, the more probable it is that this process is encrypting datas. Thus, we need to take the equation :</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Big bad equation"
+    src="/image.png"
+    ></figure>
+<p>Unfortunatly, I am not keen of equation and my little brain is made for computer code and not demon language, but i found the equivalent in C code !</p>
+<p>And now, our daemon is computing the data that the <em>eBPF</em> program sends to know if the process we are looking at is a malicious one or not ! We just have to add a check after the function that checks if the value returned by the <code>calculate_shannon_entropy</code> function is higher than a certain number (<code>7.3</code> in our case), and if so, adds the malicous process&rsquo;s inode to <code>blacklist.txt</code>.</p>
 
-<h3 class="relative group">3. The Final Injection
-    <div id="3-the-final-injection" class="anchor"></div>
+<h3 class="relative group">Update hashmaps
+    <div id="update-hashmaps" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-the-final-injection" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#update-hashmaps" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<p>We launch the surgical strike:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(gdb) set {char[25]} (ADDRESS_OF_BOOTARGS_STRING + 16) = &#34;init=/bin/sh             &#34;
-</span></span><span class="line"><span class="cl">(gdb) c</span></span></code></pre></div></div>
-<p>Linux launches. It reads its altered RAM configuration, initializes its disks, and instead of spawning the classic authentication process&hellip; it graciously hands us a <code>#</code> shell with <code>root</code> privileges.</p>
-<hr>
+<p>To make sure our <em>anti-ransomware</em> is always up to date, we need to add the content of <code>whitelist.txt</code> and <code>blacklist.txt</code> everytime we launch it. In top of that, we need to make sure that everytime one of those two list is updated, we can update the hashmaps accordingly. To do that, we will use <code>epoll</code> again, however, we need it to tells us when these files have changed. To do that, we won&rsquo;t use <code>epoll</code> in the first place, we will use <code>inotify</code>, a kernel subsystem that monitors changes to the filesystem for us. We will use it to send a notification when one file has been updated, then <code>epoll</code> will watch over <code>inotify</code> so that when we get a notification, it stops sleeping to update the list that has been changed.</p>
 
-<h2 class="relative group">Conclusion
-    <div id="conclusion" class="anchor"></div>
+<h2 class="relative group">Testing with a ransomware !
+    <div id="testing-with-a-ransomware-" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#conclusion" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#testing-with-a-ransomware-" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>This lab demonstrates a harsh reality of Hardware Security: software cryptography is useless if the underlying hardware is not protected against direct memory access.</p>
-<p>Even with a perfectly implemented Secure Boot and robust RSA 4096 keys, a DMA attack can corrupt system integrity just before its use. To defend against this kind of attack in the real world, modern architectures must rely on hardware units like the <strong>IOMMU</strong> (which filters illegitimate DMA requests)—provided the bootloader is capable of configuring it early enough!</p>
-<p>Happy hacking!</p>
+<p>Yes. To be certain that the <em>anti-ransomware</em> is working, we need to let lose a <em>ransomware</em>. Of course, i will not use a real one, but make a safe one, we don&rsquo;t want to lose everything because of one test !</p>
+<p>To prove the project is working, we need a program that writes into files with high entropy. We will just use <code>/dev/urandom</code> and write the output into a file, let&rsquo;s do it !</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">FILE</span> <span class="o">*</span><span class="n">fd</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="s">&#34;/dev/urandom&#34;</span><span class="p">,</span> <span class="s">&#34;r&#34;</span><span class="p">);</span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fd</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Can&#39;t open urandom</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">count</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="mi">4096</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;I&#39;ve read the random data I need, now, i&#39;ll write it !</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">fd</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="s">&#34;safe_test.txt&#34;</span><span class="p">,</span> <span class="s">&#34;w&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fwrite</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="mi">4096</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Written ! This means that I am not dead !</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<p>Let&rsquo;s launch the <em>eBPF</em> protector !</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="launching daemon"
+    src="/launch.png"
+    ></figure>
+<p>We can see that the daemon has updated the <code>blacklist</code> map and the <code>whitelist</code> map. It took what where in both <code>.txt</code> file and put it into the corresponding hashmap.</p>
+<p>Now we need to start the <em>ransomware</em>.</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="alt text"
+    src="/ransomware.png"
+    ></figure>
+<p>But the <em>ransomware</em> worked ! Well, it&rsquo;s because of the architecture of our <em>anti-ransomware</em>. Because we use <em>eBPF</em>, we can not sleep, meaning that we give the data to the user-space daemon, but we don&rsquo;t stop the writing, and thus, the file has been effectively encrypted.</p>
+<p>However, <strong>it is a the lesser evil.</strong></p>
+<p>After the write, our daemon reacted as quick as possible, killing the process, but it was already dead.</p>
+<p>Yet, let&rsquo;s look at our daemon&rsquo;s logs:</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="daemon banned the ransomware"
+    src="/daemon_banned.png"
+    ></figure>
+<p>It worked ! The <em>ransomware</em> is now in the <code>blacklist.txt</code>, meaning that it will not be able to perform any other write before being killed.</p>
+<p><strong><em>We sacrified one file to save thousands</em></strong></p>
+<p>Let&rsquo;s try another time !</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="ransomware has been killed"
+    src="/ransomware_killed.png"
+    ></figure>
+<p>We can see that the <em>ransomware</em> has been shut down immediatly.</p>
+<p>The point of this detector is not to erase the <em>ransomware</em> before execution, that is what a regular EDR would do. The detector is just making sure that if a <em>ransomware</em> has passed through your security, it will not be able to perform a full system encryption.</p>
+<p>There is a lot of improvement to do to make this detector a usable security program, but it uses cool tools and has all the basic we need. It was my first blue-team oriented project for this blog and I hope you found it as fun as i did !</p>
 
           
           
@@ -1121,8 +1179,8 @@ The offset between the beginning of the string and the word <code>earlycon</code
           type="text/javascript"
           src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
           integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
-          data-oid="views_posts/Bypass Secureboot in U-Boot.md"
-          data-oid-likes="likes_posts/Bypass Secureboot in U-Boot.md"></script>
+          data-oid="views_posts/anti-ransomware.md"
+          data-oid-likes="likes_posts/anti-ransomware.md"></script>
       
     </section>
 
@@ -1140,32 +1198,19 @@ The offset between the beginning of the string and the word <code>earlycon</code
           
             <a
               class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-              href="/posts/fcsc-s%C3%A9same-ouvre-toi-harder/">
+              href="/posts/bypass-secureboot-in-u-boot/">
               <span class="leading-6">
-                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Write-up: FCSC | Sésame, ouvre-toi (harder)
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)
               </span>
             </a>
             
               <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                <time datetime="2026-02-26T00:00:00&#43;00:00">26 February 2026</time>
+                <time datetime="2026-03-19T00:00:00&#43;00:00">19 March 2026</time>
               </span>
             
           
         </span>
         <span class="flex flex-col items-end">
-          
-            <a
-              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-              href="/posts/anti-ransomware/">
-              <span class="leading-6">
-                Deep Dive: Writing an eBPF-based Anti-Ransomware in C&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
-              </span>
-            </a>
-            
-              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                <time datetime="2026-04-22T00:00:00&#43;00:00">22 April 2026</time>
-              </span>
-            
           
         </span>
       </div>

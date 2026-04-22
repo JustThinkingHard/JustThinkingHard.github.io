@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ransomware on Malware Kindergarten</title>
+    <link>https://JustThinkingHard.github.io/tags/ransomware/</link>
+    <description>Recent content in Ransomware on Malware Kindergarten</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
+    <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
+    <copyright>© 2026 JustThinkingHard</copyright>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/ransomware/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deep Dive: Writing an eBPF-based Anti-Ransomware in C</title>
+      <link>https://JustThinkingHard.github.io/posts/anti-ransomware/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/anti-ransomware/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -9,7 +9,67 @@
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>C</title>
+      <link>https://JustThinkingHard.github.io/tags/c/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/c/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>EBPF</title>
+      <link>https://JustThinkingHard.github.io/tags/ebpf/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/ebpf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>EDR</title>
+      <link>https://JustThinkingHard.github.io/tags/edr/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/edr/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kernel</title>
+      <link>https://JustThinkingHard.github.io/tags/kernel/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/kernel/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://JustThinkingHard.github.io/tags/linux/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ransomware</title>
+      <link>https://JustThinkingHard.github.io/tags/ransomware/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/tags/ransomware/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>ARM64</title>
@@ -122,16 +182,6 @@
     </item>
     
     <item>
-      <title>C</title>
-      <link>https://JustThinkingHard.github.io/tags/c/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>https://JustThinkingHard.github.io/tags/c/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Linux Kernel</title>
       <link>https://JustThinkingHard.github.io/tags/linux-kernel/</link>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
@@ -177,16 +227,6 @@
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
       <guid>https://JustThinkingHard.github.io/tags/cve/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://JustThinkingHard.github.io/tags/linux/</link>
-      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>https://JustThinkingHard.github.io/tags/linux/</guid>
       <description></description>
       
     </item>
