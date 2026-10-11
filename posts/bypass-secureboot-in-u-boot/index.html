@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="dark"
-  data-auto-appearance="false"><head>
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="en">
@@ -28,7 +28,7 @@
   
   
   
-  <link rel="canonical" href="https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/">
+  <link rel="canonical" href="http://localhost:1313/posts/bypass-secureboot-in-u-boot/">
   
 
   
@@ -38,26 +38,26 @@
   
 
   
-  <meta property="og:url" content="https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/">
-  <meta property="og:site_name" content="Malware Kindergarten">
-  <meta property="og:title" content="Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)">
-  <meta property="og:description" content="A practical demonstration of a DMA attack to bypass U-Boot&#39;s Secure Boot on an ARM64 architecture using a QEMU lab environment.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-03-19T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-03-19T00:00:00+00:00">
-    <meta property="article:tag" content="Hardware">
-    <meta property="article:tag" content="U-Boot">
-    <meta property="article:tag" content="Secure Boot">
-    <meta property="article:tag" content="DMA Attack">
-    <meta property="article:tag" content="QEMU">
-    <meta property="article:tag" content="ARM64">
+  <meta property="og:url" content="http://localhost:1313/posts/bypass-secureboot-in-u-boot/">
+	<meta property="og:site_name" content="Malware Kindergarten">
+	<meta property="og:title" content="Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)">
+	<meta property="og:description" content="A practical demonstration of a DMA attack to bypass U-Boot&#39;s Secure Boot on an ARM64 architecture using a QEMU lab environment.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-03-19T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-03-19T00:00:00+00:00">
+		<meta property="article:tag" content="Hardware">
+		<meta property="article:tag" content="U-Boot">
+		<meta property="article:tag" content="Secure Boot">
+		<meta property="article:tag" content="DMA Attack">
+		<meta property="article:tag" content="QEMU">
+		<meta property="article:tag" content="ARM64">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)">
-  <meta name="twitter:description" content="A practical demonstration of a DMA attack to bypass U-Boot&#39;s Secure Boot on an ARM64 architecture using a QEMU lab environment.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)">
+	<meta name="twitter:description" content="A practical demonstration of a DMA attack to bypass U-Boot&#39;s Secure Boot on an ARM64 architecture using a QEMU lab environment.">
 
   
   
@@ -104,8 +104,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.8e69272e4f4e5fb276ee0995fcffaa85a7d5466aed662982d5439b381d160eedb6d698efa61199eea0d502d325bf45f0c7ed7df3388e7b7bcd85c9da72d7f806.css"
-    integrity="sha512-jmknLk9OX7J27gmV/P&#43;qhafVRmrtZimC1UObOB0WDu221pjvphGZ7qDVAtMlv0Xwx&#43;198ziOe3vNhcnactf4Bg==">
+    href="/css/main.bundle.min.a6bc7c88e7f0825bb50669eb2734e38da4ed7f12a2f9b682b8c059363e1456030e264b8652d4687c7d61a82882e2db9528fa23aba26de94a26bc540426564fcc.css"
+    integrity="sha512-prx8iOfwglu1BmnrJzTjjaTtfxKi&#43;baCuMBZNj4UVgMOJkuGUtRofH1hqCiC4tuVKPojq6Jt6UomvFQEJlZPzA==">
 
   
   
@@ -213,7 +213,7 @@
     "headline": "Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)",
     "description": "A practical demonstration of a DMA attack to bypass U-Boot\u0027s Secure Boot on an ARM64 architecture using a QEMU lab environment.",
     "inLanguage": "en",
-    "url" : "https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/",
+    "url" : "http://localhost:1313/posts/bypass-secureboot-in-u-boot/",
     "author" : {
       "@type": "Person",
       "name": "JustThinkingHard"
@@ -234,12 +234,6 @@
 
 
   
-  
-    
-
-
-
-
   
 
   
@@ -838,8 +832,8 @@
         width="96"
         height="96"
         alt="JustThinkingHard"
-        src="/img/author_hu_90966246fe5dc66f.jpg"
-        data-zoom-src="/img/author_hu_6eee9eae95493a1c.jpg">
+        src="/img/author_hu_c007539fcdd773ca.jpg"
+        data-zoom-src="/img/author_hu_8568a5bc56700183.jpg">
     
   
   <div class="place-self-center">
@@ -1153,6 +1147,19 @@ The offset between the beginning of the string and the word <code>earlycon</code
           
         </span>
         <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/anti-ransomware/">
+              <span class="leading-6">
+                Deep Dive: Writing an eBPF-based Anti-Ransomware in C&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2026-04-22T00:00:00&#43;00:00">22 April 2026</time>
+              </span>
+            
           
         </span>
       </div>
