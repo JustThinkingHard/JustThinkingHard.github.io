@@ -2,251 +2,251 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Malware Kindergarten</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://JustThinkingHard.github.io/tags/</link>
     <description>Recent content in Tags on Malware Kindergarten</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>EBPF</title>
-      <link>http://localhost:1313/tags/ebpf/</link>
+      <link>https://JustThinkingHard.github.io/tags/ebpf/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/ebpf/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/ebpf/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>EDR</title>
-      <link>http://localhost:1313/tags/edr/</link>
+      <link>https://JustThinkingHard.github.io/tags/edr/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/edr/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/edr/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Kernel</title>
-      <link>http://localhost:1313/tags/kernel/</link>
+      <link>https://JustThinkingHard.github.io/tags/kernel/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/kernel/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/kernel/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://JustThinkingHard.github.io/tags/linux/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/linux/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ransomware</title>
-      <link>http://localhost:1313/tags/ransomware/</link>
+      <link>https://JustThinkingHard.github.io/tags/ransomware/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/ransomware/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/ransomware/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Rust</title>
-      <link>http://localhost:1313/tags/rust/</link>
+      <link>https://JustThinkingHard.github.io/tags/rust/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/rust/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/rust/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>C</title>
-      <link>http://localhost:1313/tags/c/</link>
+      <link>https://JustThinkingHard.github.io/tags/c/</link>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/c/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/c/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ARM64</title>
-      <link>http://localhost:1313/tags/arm64/</link>
+      <link>https://JustThinkingHard.github.io/tags/arm64/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/arm64/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/arm64/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>DMA Attack</title>
-      <link>http://localhost:1313/tags/dma-attack/</link>
+      <link>https://JustThinkingHard.github.io/tags/dma-attack/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/dma-attack/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/dma-attack/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Hardware</title>
-      <link>http://localhost:1313/tags/hardware/</link>
+      <link>https://JustThinkingHard.github.io/tags/hardware/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/hardware/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/hardware/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>QEMU</title>
-      <link>http://localhost:1313/tags/qemu/</link>
+      <link>https://JustThinkingHard.github.io/tags/qemu/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/qemu/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/qemu/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Secure Boot</title>
-      <link>http://localhost:1313/tags/secure-boot/</link>
+      <link>https://JustThinkingHard.github.io/tags/secure-boot/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/secure-boot/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/secure-boot/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>U-Boot</title>
-      <link>http://localhost:1313/tags/u-boot/</link>
+      <link>https://JustThinkingHard.github.io/tags/u-boot/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/u-boot/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/u-boot/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Bootloader</title>
-      <link>http://localhost:1313/tags/bootloader/</link>
+      <link>https://JustThinkingHard.github.io/tags/bootloader/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/bootloader/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/bootloader/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>FCSC</title>
-      <link>http://localhost:1313/tags/fcsc/</link>
+      <link>https://JustThinkingHard.github.io/tags/fcsc/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/fcsc/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/fcsc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Low Level</title>
-      <link>http://localhost:1313/tags/low-level/</link>
+      <link>https://JustThinkingHard.github.io/tags/low-level/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/low-level/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/low-level/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Reverse Engineering</title>
-      <link>http://localhost:1313/tags/reverse-engineering/</link>
+      <link>https://JustThinkingHard.github.io/tags/reverse-engineering/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/reverse-engineering/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/reverse-engineering/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>UEFI</title>
-      <link>http://localhost:1313/tags/uefi/</link>
+      <link>https://JustThinkingHard.github.io/tags/uefi/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/uefi/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/uefi/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Linux Kernel</title>
-      <link>http://localhost:1313/tags/linux-kernel/</link>
+      <link>https://JustThinkingHard.github.io/tags/linux-kernel/</link>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/linux-kernel/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/linux-kernel/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Malware Dev</title>
-      <link>http://localhost:1313/tags/malware-dev/</link>
+      <link>https://JustThinkingHard.github.io/tags/malware-dev/</link>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/malware-dev/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/malware-dev/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Rootkit</title>
-      <link>http://localhost:1313/tags/rootkit/</link>
+      <link>https://JustThinkingHard.github.io/tags/rootkit/</link>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/rootkit/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/rootkit/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Attack</title>
-      <link>http://localhost:1313/tags/attack/</link>
+      <link>https://JustThinkingHard.github.io/tags/attack/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/attack/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/attack/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE</title>
-      <link>http://localhost:1313/tags/cve/</link>
+      <link>https://JustThinkingHard.github.io/tags/cve/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/cve/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/cve/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ELF</title>
-      <link>http://localhost:1313/tags/elf/</link>
+      <link>https://JustThinkingHard.github.io/tags/elf/</link>
       <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>http://localhost:1313/tags/elf/</guid>
+      <guid>https://JustThinkingHard.github.io/tags/elf/</guid>
       <description></description>
       
     </item>

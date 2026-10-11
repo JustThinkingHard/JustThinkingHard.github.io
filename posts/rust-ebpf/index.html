@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="dark"
-  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="false"><head>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="en">
@@ -28,7 +28,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/rust-ebpf/">
+  <link rel="canonical" href="https://JustThinkingHard.github.io/posts/rust-ebpf/">
   
 
   
@@ -38,7 +38,7 @@
   
 
   
-  <meta property="og:url" content="http://localhost:1313/posts/rust-ebpf/">
+  <meta property="og:url" content="https://JustThinkingHard.github.io/posts/rust-ebpf/">
 	<meta property="og:site_name" content="Malware Kindergarten">
 	<meta property="og:title" content="Deep Dive: Porting my eBPF anti-ransomware to Rust">
 	<meta property="og:description" content="How did I rewrite my own eBPF anti-ransomware to Rust using aya.">
@@ -213,7 +213,7 @@
     "headline": "Deep Dive: Porting my eBPF anti-ransomware to Rust",
     "description": "How did I rewrite my own eBPF anti-ransomware to Rust using aya.",
     "inLanguage": "en",
-    "url" : "http://localhost:1313/posts/rust-ebpf/",
+    "url" : "https://JustThinkingHard.github.io/posts/rust-ebpf/",
     "author" : {
       "@type": "Person",
       "name": "JustThinkingHard"
@@ -234,6 +234,12 @@
 
 
   
+  
+    
+
+
+
+
   
 
   
@@ -918,7 +924,7 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <p><em><strong>Disclaimer: This project is the Rust version of my eBPF project in C explained here : <a href="http://localhost:1313/posts/anti-ransomware/" >anti-ransomware post</a>.</strong></em></p>
+          <p><em><strong>Disclaimer: This project is the Rust version of my eBPF project in C explained here : <a href="https://justthinkinghard.github.io/posts/anti-ransomware/"  target="_blank" rel="noreferrer">anti-ransomware post</a>.</strong></em></p>
 <p>Writing the C version of the anti-ransomware, I figured that the problem with writing it in C was that I could literally do anything I wanted, meaning that I could also make a lot of mistakes (race conditions, memory allocation errors&hellip;). Writing in C implies that the author has a deep level of knowledge about what he is trying to do and how to do it, because the whole safety of his code is based on himself. However, since I am human (and you hopefully are too), it meant that I would obviously make a mistake at any point in this program.</p>
 <p>This whole thinking process made me want to rewrite the whole project into Rust, where there are lots of rules inherent to the programming language. Rust would add a layer of security on top of the author, by checking its work through a set of rules that are just not present in C. However, even though Rust seems a really good match for this low-level project, there is a down side: the use of <code>unsafe</code>. Rust has a lot of rules, but obviously, if I am trying to work with raw memory or pointers, Rust can not be 100% sure that it is safe, since it can&rsquo;t know for sure the outcome of what I am doing. For this exact point, Rust hands me the <code>unsafe</code> keyword, used to tell it that I am sure of what I am writing, and that it doesn&rsquo;t have to check it. This means that, on those little portions of code, we get back to writing code whose only safeguard is me, but since it is mandatory to work on low level side of the project, we accept it.</p>
 <p>So in this post, I wanted to review what changed between the two versions, and why.</p>
