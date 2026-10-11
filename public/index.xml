@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Malware Kindergarten</title>
+    <link>https://JustThinkingHard.github.io/</link>
+    <description>Recent content on Malware Kindergarten</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
+    <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
+    <copyright>© 2026 JustThinkingHard</copyright>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deep Dive: Porting my eBPF anti-ransomware to Rust</title>
+      <link>https://JustThinkingHard.github.io/posts/rust-ebpf/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/rust-ebpf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Dive: Writing an eBPF-based Anti-Ransomware in C</title>
+      <link>https://JustThinkingHard.github.io/posts/anti-ransomware/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/anti-ransomware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://JustThinkingHard.github.io/aboutme/</link>
+      <pubDate>Fri, 20 Mar 2026 10:50:00 +0100</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/aboutme/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>To do list</title>
+      <link>https://JustThinkingHard.github.io/todo-list/</link>
+      <pubDate>Fri, 20 Mar 2026 10:50:00 +0100</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/todo-list/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Dive: Bypassing U-Boot Secure Boot via DMA Attack (QEMU Lab)</title>
+      <link>https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/bypass-secureboot-in-u-boot/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Write-up: FCSC | Sésame, ouvre-toi (harder)</title>
+      <link>https://JustThinkingHard.github.io/posts/fcsc-s%C3%A9same-ouvre-toi-harder/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/fcsc-s%C3%A9same-ouvre-toi-harder/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>My Curriculum Vitae</title>
+      <link>https://JustThinkingHard.github.io/cv/</link>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/cv/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ring 0 Operations: Building a Linux Rootkit from Scratch</title>
+      <link>https://JustThinkingHard.github.io/posts/rootkit/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/rootkit/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Dive: HID Attacks with Raspberry Pi Pico and CVE-2025-6019</title>
+      <link>https://JustThinkingHard.github.io/posts/hid-attack/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/hid-attack/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Dive: Process Injection via Code Cave Discovery on Linux</title>
+      <link>https://JustThinkingHard.github.io/posts/process_injector/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/process_injector/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Dive: Writing an ELF Code Cave Infector in C</title>
+      <link>https://JustThinkingHard.github.io/posts/elf-infektor/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
+      <guid>https://JustThinkingHard.github.io/posts/elf-infektor/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
