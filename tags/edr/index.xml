@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EDR on Malware Kindergarten</title>
-    <link>https://JustThinkingHard.github.io/tags/edr/</link>
+    <link>http://localhost:1313/tags/edr/</link>
     <description>Recent content in EDR on Malware Kindergarten</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>oscardeschamps6@gmail.com (JustThinkingHard)</managingEditor>
     <webMaster>oscardeschamps6@gmail.com (JustThinkingHard)</webMaster>
     <copyright>© 2026 JustThinkingHard</copyright>
-    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://JustThinkingHard.github.io/tags/edr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/edr/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Deep Dive: Porting my eBPF anti-ransomware to Rust</title>
-      <link>https://JustThinkingHard.github.io/posts/rust-ebpf/</link>
+      <link>http://localhost:1313/posts/rust-ebpf/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>https://JustThinkingHard.github.io/posts/rust-ebpf/</guid>
+      <guid>http://localhost:1313/posts/rust-ebpf/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Deep Dive: Writing an eBPF-based Anti-Ransomware in C</title>
-      <link>https://JustThinkingHard.github.io/posts/anti-ransomware/</link>
+      <link>http://localhost:1313/posts/anti-ransomware/</link>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <author>oscardeschamps6@gmail.com (JustThinkingHard)</author>
-      <guid>https://JustThinkingHard.github.io/posts/anti-ransomware/</guid>
+      <guid>http://localhost:1313/posts/anti-ransomware/</guid>
       <description></description>
       
     </item>
